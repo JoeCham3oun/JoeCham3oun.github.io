@@ -1,0 +1,298 @@
+/* ****************************************************** */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	overflow: hidden;
+	/* background: linear-gradient(to bottom, rgb(26, 26, 26), rgb(78, 205, 196), rgb(247, 255, 247)); */
+    background: linear-gradient(to bottom, rgb(26, 26, 26), rgb(78, 205, 196), rgb(26, 26, 26));
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo', sans-serif;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+.title {
+    text-align: center;
+    text-shadow: #374B4A 3px 3px 2px;
+    margin-top: 75px;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+p {
+    margin-left: 30px;
+	line-height: 1.5;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+ul li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #005853;
+    position: absolute;
+	top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+/* .outer-li::before {
+	top: 15%;
+}
+
+.inner-li::before {
+    width: 10px;
+    height: 1px;
+	top: 50%;
+} */
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e0e0e0;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+.separator {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    height: 4px;
+    border: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(26, 26, 26), rgb(78, 205, 196), rgb(247, 255, 247), rgba(0, 0, 0, 0));
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.thin-separator {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 2px;
+    border: none;
+}
+
+.thin-separator.light {
+    /* background-color: #4ECDC4; */
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(78, 205, 196), rgba(0, 0, 0, 0));
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+}
+
+
+.thin-separator.dark {
+    /* background-color: #4ECDC4; */
+	background-image: linear-gradient(to right, rgb(78, 205, 196), rgb(26, 26, 26), rgb(78, 205, 196));
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+.container {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.container > div {
+	margin: 20px auto;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+.z-text {
+    padding: 4.5%;
+    position: relative;
+    scale: 1;
+    z-index: 0;
+    transition: transform 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    background-color: #00000000;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white; /* Set text color */
+}
+
+.z-text:hover {
+    z-index: 999;
+    transform: scale(1.1);
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.table-container td, th {
+    padding: 10px;
+    text-align: center;
+	border-radius: 10px;
+	border-style: ridge;
+	border-width: 1px;
+	border-color: #333;
+}
+
+.table-container td {
+    text-align: center;
+}
+
+.participants-table td:hover {
+    background-color: rgb(247, 255, 247);
+}
+
+.participants-table td:hover a {
+    color: rgb(78, 205, 196);
+}
+
+.participants-table td:hover a::before {
+    background-color: rgb(78, 205, 196);
+}
+
+th {
+    background-color: #333;
+}
+
+.interaction-points-table th:first-child,
+.interaction-points-table td:first-child {
+	width: 25%;
+}
+
+.interaction-points-table th:nth-child(2),
+.interaction-points-table td:nth-child(2) {
+	width: 35%;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+ol.interaction-points-list {
+	list-style-type: none;
+	padding: 0;
+  }
+
+.interaction-points-list > li {
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+	padding: 15px;
+	border-radius: 8px;
+	color: #333;;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.interaction-points-list strong {
+	color: #333;
+}
+
+.interaction-points-list em {
+	font-style: italic;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+.persona {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.persona img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.persona h3 {
+    margin-bottom: 10px;
+	color: #333;
+}
+
+.persona p {
+	color: #333;
+}
+/* ****************************************************** */
+
+
+/* ****************************************************** */
+iframe {
+	width: 423px;
+    height: 237px;
+    display:inline-block;
+    margin-left:15px;
+	border-radius: 20px;
+}
+/* ****************************************************** */
