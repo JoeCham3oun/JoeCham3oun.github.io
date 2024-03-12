@@ -186,10 +186,11 @@ a:hover::before {
     align-items: center;
 	max-width: 85%;
 	margin: 0 auto;
+    overflow-x: auto;
 }
 
 table {
-    width: 100%;
+    min-width: 100%; 
     border-collapse: separate;
     border-spacing: 10px;
 }
