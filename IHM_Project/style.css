@@ -320,10 +320,9 @@ ol.interaction-points-list {
 
 /* ****************************************************** */
 iframe {
-	width: 423px;
-    height: 237px;
-    display:inline-block;
-    margin-left:15px;
-	border-radius: 20px;
+	width: 420px;
+    height: 315px;
+    border: none;
+	border-radius: 15px;
 }
 /* ****************************************************** */
